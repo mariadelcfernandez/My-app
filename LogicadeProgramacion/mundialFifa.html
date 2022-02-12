@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PROGRAMA AñO MUNDIAL DE LA FIFA</h1>
+    <script>
+    function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+    }
+  function imprimir(frase){
+        document.write(frase);
+        saltarlinea();
+    }
+    var anhoMundial =1990;
+    var limite=parseInt(prompt("Ingrese hasta que año quiere calcular :"))
+   //  alert("Hubo mndial de la FIFA en el año :"+anhoMundial)
+while(anhoMundial<=limite){
+       imprimir("Hubo mundial de la FIFA en el año :"+anhoMundial);
+       anhoMundial=anhoMundial+4;
+}
+   alert("fin");
+</script>
+</body>
+</html>

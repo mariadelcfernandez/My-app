@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Sesion de User</title>
+</head>
+<body>
+    
+    <script>
+    
+        var inicioDeSesionRegistrado = "alura";
+        var contrasenhaRegistrada = "alura321";
+    
+        
+    var intentos=3;
+    var intento=1;
+    while(intento<=intentos){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        } else {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+        intento++;
+    }
+    </script> 
+     <h2>14 Lo que aprendimos</h2>
+     
+     <ul>
+        <li>Repetir tareas y actividades con iteraciones while.</li>
+        <li>Repetir tareas y actividades con iteraciones for.</li>
+        <li>Interrumpir iteraciones con break.</li>
+        <li>Realizar iteraciones anidadas, un loop dentro de otro.</li>
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saltarlinea(){
+            document.write("<br>");
+            document.write("<br>");
+           
+        }
+      function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+      // var numeroPar=0;
+     // const pares=[];
+     // const impares=[];
+      var contarPar=0
+       var contador=1;
+       var numeroMaximo=parseInt(prompt("Ingrese el numero de maximo a iterar  :"))
+       //  alert("Hubo mndial de la FIFA en el año :"+anhoMundial)
+    while(contador<=numeroMaximo){
+       // edad=parseInt(prompt("Ingrese la edad del familiar :"));
+         if (contador%2==0 ){
+             contarPar++;
+            imprimir("El numero es par :"+contador);
+            
+            //pares.push(contador);
+         }else{
+            // imprimir("El numero es impar :"+contador);
+            //impares.push(contador);
+         }
+
+        contador++;
+    }
+    alert("Hay un total de "+contarPar+" numeros pares");
+    /*for(var numero=1 in pares[(numero.length-1)]){
+    imprimir("El numero es par :");
+    console.log(pares(contador));
+    saltarlinea();
+    }
+    for(var numero=1 in impares[(numero.length-1)]){
+    imprimir("El numero es par :"+impares(contador));
+    console.log(impares(contador));
+    saltarlinea();
+    } */
+    </script> 
+</body>
+</html>

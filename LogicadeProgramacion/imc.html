@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <h1>"Calculo del Indice corporal"</h1>
+</head>
+<body>
+    <script>
+    
+       
+         function saltarlinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+        function calcularImc(peso_persona,alturaPersona){
+           return peso_persona/(alturaPersona*alturaPersona);
+            
+        }
+  
+        imprimir("El promedio del IMC de :"+"Maria y Katia" +" es de "+(calcularImc(71.5,1.65)+calcularImc(86,1.84))/2);
+        imprimir("El promedio del IMC de :"+"Francisco y Federico" +" es de "+(calcularImc(79.5,1.71)+calcularImc(86,1.84))/2);
+       
+        var nombre=prompt("Cual es su nombre :");
+        var pesoInformado=prompt("Informe su peso :");
+        var alturaInformada=prompt("Informe su altura :");
+        var imcCalculado=calcularImc(pesoInformado,alturaInformada);
+
+        imprimir(nombre+ " su peso de IMC es :"+imcCalculado);
+
+        if (imcCalculado <18.5){
+            imprimir(nombre+ " su peso de IMC es :"+imcCalculado);
+        }
+        if (imcCalculado >=18.5 && imcCalculado <25){
+            imprimir(nombre+ " su peso de IMC es considerado Normal y es d :"+imcCalculado);
+        }
+        if (imcCalculado >=25 && imcCalculado <30){
+            imprimir(nombre+ " su peso de IMC es considerado con Sobrepeso y es de :"+imcCalculado);
+        }
+        if (imcCalculado >30){
+            imprimir(nombre+ " su peso de IMC es considerado obesidad y es de:"+imcCalculado);
+        }
+    </script>
+    <h1>Lo que aprendimos</h1> 
+    
+    <ul>
+       <li> Creamos un programa para calcular IMC.</li>
+       <li> Profundizamos en el retorno de funciones.</li>
+    </ul>   
+    <p>Usamos el browser en este caso, nuestro navegador Chrome, como nuestro compilador, como nuestro lector</p>
+    <p>y ejecutor del código. Vimos que nuestro navegador es una herramienta</p>
+    <p> que puede ser usada en este caso como un compilador y que es una herramienta políglota, entiende varios idiomas.</p>
+ 
+</body>
+</html>

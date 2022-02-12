@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        
+    var edad1 = 10;
+    var edad2 = 20;
+    var edad3 = 30;
+//consigna: Calcular la diferencia de edades y  
+//mostrar mensaje empleando funciones.
+    var edadMari = 40;
+    var edadPedro = 48;
+
+    var defirenciaEdades=edadPedro-edadMari
+
+      
+    var totalEdades = edad1 + edad2 + edad3;
+    var promedioEdades = totalEdades/3;
+    alert("***Total de edades es " + totalEdades + "***");
+    alert("***La media de las edades es " +  promedioEdades + "***");
+
+        function saltarlinea(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+
+       // document.writeln("Hola ");      
+       // imprimir("este es el mejor");
+       // document.write("Mundo");
+      //  saltarlinea();
+      //  imprimir("Esto es las buenas practicas");
+
+        //Resolucion de ejercicio
+        function saltarlinea(){
+            document.write("<br>");
+            document.write("<br>");
+    
+        }
+        function imprimir(mensaje){
+            document.write("*** "+mensaje+" ***");
+           
+        }
+        document.write("*******************************************");
+        saltarlinea();
+        imprimir("Nuestra diferencia de edad es de :"+defirenciaEdades+" años");
+
+    </script>
+</body>
+</html>

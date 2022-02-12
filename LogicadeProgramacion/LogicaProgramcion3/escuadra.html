@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Escuadra</title>
+</head>
+<body>
+    <canvas width = "600" height="400"> </canvas>
+    
+   <script>
+       var pantalla = document.querySelector("canvas");
+       var pincel =pantalla.getContext("2d");
+       pincel.fillStyle='black';
+       pincel.beginPath();
+       pincel.moveTo(50,50);
+       pincel.lineTo(50,400);     
+       pincel.lineTo(400,400);
+       pincel.fill();
+
+       pincel.fillStyle='white';
+       pincel.beginPath();
+       pincel.moveTo(100,175);
+       pincel.lineTo(100,350);
+       pincel.lineTo(275,350);
+       pincel.fill();
+
+      /* pincel.beginPath();
+       pincel.moveTo(50, 50);
+       pincel.lineTo(50, 400);  */
+
+      // pincel.strokeText(50,50);
+      /*  pincel.fillStyle='white';
+        pincel.beginPath();
+        pincel.moveTo(100, 175);
+        pincel.lineTo(100, 350);
+        pincel.lineTo(275, 350);
+        pincel.fill();
+
+        pincel.beginPath();
+        pincel.moveTo(50, 50);
+        pincel.lineTo(50, 400); */
+
+   </script> 
+   <p> 09 Haz lo que hicimos en el aula
+    PRÓXIMA ACTIVIDAD
+    
+    Llegó la hora de que tú sigas todos los pasos que yo realicé durante el aula. Si ya lo hiciste, excelente. Si todavía no, es importante que implementes lo que fue visto en los videos para poder continuar con la próxima aula que tiene como pre-requisito el código que escribimos hasta aquí. 
+    En cada capítulo también puedes descargar el proyecto realizado hasta ese punto.</p>
+</body>
+</html>
