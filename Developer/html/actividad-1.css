@@ -1,0 +1,6 @@
+body{
+   margin-block: 2;
+}
+select.red{
+    background-color: red;
+}
